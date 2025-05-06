@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router";
 import App from "./App";
 
 import Login from "./login";
-const basename = "/";
+let basename = window.__POWERED_BY_QIANKUN__ ? "/app" : "/";
 declare global {
   interface Window {
     __POWERED_BY_QIANKUN__?: boolean;
